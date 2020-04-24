@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+// eslint-disable-next-line
+import Products from './components/Products';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Rating from './components/Rating';
+
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <Rating rating="1"/>
+                <Rating rating="2"/>
+                <Rating rating="3"/>
+                <Rating rating="4"/>
+                <Rating rating="5"/>
+            </div>
+        );
+    }
 }
 
 export default App;
